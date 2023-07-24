@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this project has created for learning purpose">
+    <title>product-page-gallery-js - agilePoint.</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- nav -->
+    <nav class="nav flex">
+
+        <div class="logo flex">
+            <img src="img/agile.png" alt="logo image">
+            <h2>agile<span>Point</span>.</h2>
+        </div>
+
+        <button type="button" class="nav-btn btn">Contact</button>
+    </nav>
+
+
+    <!-- hero -->
+    <section class="product-container flex">
+        <div class="product">
+            <!-- product gallery -->
+            <div class="product-gallery">
+                <img src="img/image1.png" class="product-img" id="product-img">
+
+                <!-- gallery controls -->
+                <div class="gallery-controls">
+                    <span class="gallery-control-btn active"></span>
+                    <span class="gallery-control-btn"></span>
+                    <span class="gallery-control-btn"></span>
+                </div>
+            </div>
+
+            <!-- product details -->
+            <div class="details">
+                <h1>Casual T Shirt</h1>
+                <h2>$14.99</h2>
+                <h3>30% OFF</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nobis nam vitae.</p>
+
+                <form action="">
+                    <!-- size -->
+                    <div class="select size-select flex">
+                        <p>Size</p>
+                        <label for="small" class="flex">
+                            <input type="radio" name="size" id="small">
+                            <span>S</span>
+                        </label>
+                        <label for="medium" class="flex">
+                            <input type="radio" name="size" id="medium">
+                            <span>M</span>
+                        </label>
+                        <label for="large" class="flex">
+                            <input type="radio" name="size" id="large">
+                            <span>L</span>
+                        </label>
+                        <label for="x-large" class="flex">
+                            <input type="radio" name="size" id="x-large">
+                            <span>XL</span>
+                        </label>
+                        <label for="xx-large" class="flex">
+                            <input type="radio" name="size" id="xx-large">
+                            <span>XXL</span>
+                        </label>
+                    </div>
+
+                    <!-- color -->
+                    <div class="select color-select flex">
+                        <p>Color</p>
+                        <label for="lightcoral" class="flex">
+                            <input type="radio" name="color" id="lightcoral">
+                            <span class="color-1"></span>
+                        </label>
+                        <label for="lightseagreen" class="flex">
+                            <input type="radio" name="color" id="lightseagreen">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="cadetblue" class="flex">
+                            <input type="radio" name="color" id="cadetblue">
+                            <span class="color-3"></span>
+                        </label>
+                        <label for="pink" class="flex">
+                            <input type="radio" name="color" id="pink">
+                            <span class="color-4"></span>
+                        </label>
+                        <label for="lightskyblue" class="flex">
+                            <input type="radio" name="color" id="lightskyblue">
+                            <span class="color-5"></span>
+                        </label>
+                    </div>
+
+                    <!-- quantity -->
+                    <div class="select quanty-select flex">
+                        <p>Quantity</p>
+                        <input type="number" name="" id="" value="1">
+                    </div>
+
+                    <!-- button -->
+                    <div class="product-buttons flex">
+                        <button type="reset" class="btn products-reset-btn">Reset</button>
+                        <button type="submit" class="btn products-submit-btn buy-btn">Buy Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- footer -->
+    <footer class="flex">
+       <p>&copy; <a href="#"><b>agile</b>Point.</a>&bullet; July 24, 2023</p>
+       <p><a href="#">Khorshed Alam</a></p>
+    </footer>
+    
+
+
+    <!-- js -->
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!-- 24:42 -->

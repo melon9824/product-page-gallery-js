@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/*=== nav ===*/
+.nav {
+    max-height: 8vh;
+    padding: 0.5rem 6%;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, 
+                            #13203aa2 0%, #092055be 50%), 
+                            url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* logo */
+.logo {
+    justify-content: start;
+}
+
+.logo img {
+    width: 2.5rem;
+}
+
+.logo h2 {
+    color: #ff4000;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #37D0EE;
+    font-weight: 400;
+}
+
+/* button */
+.btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(45deg, #37d0ee 0%, #333333 100%);
+    transition: background 0.4s;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #333333 0%, #37d0ee 100%);
+}
+
+
+/*=== hero ===*/
+.product-container {
+    width: 100%;
+    min-height: 85vh;
+    justify-content: center;
+    background: linear-gradient(45deg, #37d0ee 0%, #333333 100%);
+}
+
+.product {
+    width: 90%;
+    max-width: 750px;
+    padding: 2rem 0;
+    display: flex;
+}
+
+.product-gallery {
+    flex-basis: 47%;
+    background: #241e20;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.product-img {
+    width: 80%;
+    margin: auto;
+    display: block;
+    padding-top: 6rem;
+}
+
+.gallery-controls {
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.25rem;
+}
+
+.gallery-control-btn {
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #37d0ee 0%, #333333 100%);
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.gallery-control-btn.active {
+    background: orange;
+}
+
+.details {
+    flex-basis: 53%;
+    background: #fff;
+    padding: 2.5rem;
+    padding-left: 3.5rem;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.details h1{
+    color: #333;
+    font-size: 2rem;
+}
+
+.details h2{
+    color: #555;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.details h3{
+    color: #00d874;
+    margin-bottom: .5rem;
+}
+
+.details p{
+    color: #777;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.details form {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.select {
+    margin-top: 1.5rem;
+}
+
+.select p {
+    width: 3rem;
+    font-weight: 600;
+}
+
+.select label {
+    column-gap: 0.2rem;
+}
+
+.select span {
+    cursor: pointer;
+}
+
+.select label:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.size-select span {
+    font-size: 0.75rem;
+}
+
+.size-select input:checked + span {
+    color: blue;
+    font-weight: 600;
+}
+
+.color-select span {
+    display: inline-block;
+    width: 0.9rem;
+    height: 0.6rem;
+}
+
+.color-1 {
+    background-color: lightcoral;
+}
+
+.color-2 {
+    background-color: lightseagreen;
+}
+
+.color-3 {
+    background-color: cadetblue;
+}
+
+.color-4 {
+    background-color: pink;
+}
+
+.color-5 {
+    background-color: lightskyblue;
+}
+
+.color-select input:checked + span {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 5px #000;
+}
+
+.size-select input,
+.color-select input {
+    display: none;
+}
+
+.quanty-select p {
+    width: 4rem;
+}
+
+.quanty-select input {
+    background: #eee;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+}
+
+.product-buttons {
+    margin-top: 1rem;
+}
+
+.products-reset-btn,
+.products-submit-btn {
+    border-radius: 0;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+}
+
+.products-reset-btn {
+    padding: 0.25rem 0.75rem;
+    color: #fff;
+    background: linear-gradient(45deg, #373737, #ff4000);
+    transition: 0.4s;
+}
+
+.products-reset-btn:hover {
+    background: linear-gradient(45deg, #ff4000, #373737);
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 7vh;
+    padding-top: 0.5rem;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, 
+                            #13203aa2 0%, #092055be 50%), 
+                            url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+footer p {
+    padding: 0.1rem;
+    font-size: 0.75rem;
+    color: #f8f4f4;
+    height: 5vh;
+}
+
+footer p a {
+    color: #a8b3c9;
+    text-decoration: underline;
+    text-underline-offset: .2rem;
+    transition: all 0.4s;
+}
+
+footer p a:hover {
+    text-decoration: none;
+    color: #ffa500;
+}
+
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+    .details {
+        flex-basis: 53%;
+        padding: 1.5rem;
+        padding-left: 2rem;
+    }
+    
+    .details h1{
+        font-size: 1.5rem;
+    }
+    
+    .details h2{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .nav {
+        padding: 0.5rem 3%;
+    }
+    
+    .logo img {
+        width: 1.75rem;
+    }
+    
+    .logo h2 {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 1.25rem;
+    }
+
+    .product {
+        flex-direction: column;
+    }
+    
+    .product-gallery {
+        flex-basis: 100%;
+        transform: none;
+    }
+    
+    .product-img {
+        width: 60%;
+        padding-top: 1rem;
+    }
+    
+    .details {
+        flex-basis: 100%;
+        padding: 2.5rem;
+    }
+    
+    .details h1{
+        font-size: 1.5rem;
+    }
+    
+    .details h2{
+        font-size: 1.25rem;
+        margin: 0.5rem 0;
+    }
+    
+    .details h3{
+        margin-bottom: 1rem;
+    }
+
+    .size-select,
+    .color-select {
+        gap: 0.2rem;
+        flex-wrap: wrap;
+    }
+
+    .products-reset-btn {
+        padding: 0.25rem 0.75rem;
+    }
+
+    footer p {
+        font-size: 0.5rem;
+    }
+}
